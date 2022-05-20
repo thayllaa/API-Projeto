@@ -22,4 +22,11 @@ export class AuthComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {}
+
+  postLogin() {
+    this.http.post<Auth> (
+      this.site+'/user', {
+      }
+    );
+  }
 }
