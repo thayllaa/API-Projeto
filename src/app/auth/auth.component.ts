@@ -16,6 +16,8 @@ export class AuthComponent implements OnInit {
   login = 'thaylla.santana@fatec.sp.gov.br';
   senha = '06062001';
 
+  auth = null;
+
   constructor() {}
 
   ngOnInit() {}
