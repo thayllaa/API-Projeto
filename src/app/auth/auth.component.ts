@@ -18,7 +18,7 @@ export class AuthComponent implements OnInit {
 
   auth = null;
 
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   ngOnInit() {}
 }
