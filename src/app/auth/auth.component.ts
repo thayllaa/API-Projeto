@@ -1,32 +1,15 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-
-interface Auth {
-  username: string;
-}
 
 @Component({
   selector: 'app-auth',
   templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.css'],
+  styleUrls: ['./auth.component.css']
 })
 export class AuthComponent implements OnInit {
 
-  site = 'http://localhost:8080/users';
+  constructor() { }
 
-  login = 'thaylla.santana@fatec.sp.gov.br';
-  senha = '06062001';
-
-  auth = null;
-
-  constructor(private http: HttpClient) {}
-
-  ngOnInit() {}
-
-  postLogin() {
-    this.http.post<Auth> (
-      this.site+'/user', {
-      }
-    );
+  ngOnInit() {
   }
+
 }
