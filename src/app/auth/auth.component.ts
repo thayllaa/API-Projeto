@@ -11,9 +11,10 @@ interface Auth {
 })
 export class AuthComponent implements OnInit {
 
-  site = '';
-  login = '';
-  senha = '';
+  site = 'http://localhost:8080/users';
+
+  login = 'thaylla.santana@fatec.sp.gov.br';
+  senha = '06062001';
 
   constructor() {}
 
